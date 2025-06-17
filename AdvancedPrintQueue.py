@@ -63,7 +63,7 @@ class CircularPrinterQueue:
         count:int = 0
         i:int = 0
         while i <= self.CAPACITY-1:
-            if self.data[i][0] is not None:
+            if self.data[i][2] is not None:
                 count+=1
             i+=1
         if count==0:
